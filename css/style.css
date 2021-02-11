@@ -1,13 +1,48 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}
 
 .form-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .form-right {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	margin-left: 16px;
 }
 .textarea-wraper {
@@ -22,6 +57,22 @@
 	width: 352px;
 	background-color: #F8F8F8;
 	border: 2px solid #E8E8E8;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+	color: #CECECE;
+	font-size: 13px;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+	color: #CECECE;
+	font-size: 13px;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+	color: #CECECE;
+	font-size: 13px;
+}
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+	color: #CECECE;
+	font-size: 13px;
 }
 input::placeholder,
 textarea::placeholder {
@@ -40,9 +91,16 @@ textarea::placeholder {
 	font-size: 14px;
 }
 .section-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 }
 .section-h4 {
 	font-size: 14px;
